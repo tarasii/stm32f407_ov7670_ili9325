@@ -1,0 +1,22 @@
+--cpu Cortex-M4.fp
+".\output\main.o"
+".\output\sccb.o"
+".\output\dcmi_ov7670.o"
+".\output\asciilib.o"
+".\output\lcd.o"
+".\output\usart.o"
+".\output\stm32f4xx_it.o"
+".\output\startup_stm32f4xx.o"
+".\output\misc.o"
+".\output\stm32f4xx_dcmi.o"
+".\output\stm32f4xx_dma.o"
+".\output\stm32f4xx_fsmc.o"
+".\output\stm32f4xx_gpio.o"
+".\output\stm32f4xx_i2c.o"
+".\output\stm32f4xx_rcc.o"
+".\output\stm32f4xx_usart.o"
+".\output\system_stm32f4xx.o"
+--strict --scatter ".\Output\Project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listing\Project.map" -o .\Output\Project.axf
